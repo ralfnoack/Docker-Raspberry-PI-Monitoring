@@ -5,7 +5,7 @@ services:
     image: grafana/grafana:latest
     hostname: rpi-grafana
     restart: unless-stopped
-    user: "472"
+    user: "0"
     networks:
       - internal
     ports:

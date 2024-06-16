@@ -11,8 +11,7 @@ services:
     ports:
       - "3001:3000"
 
-    volumes:
-      # /!\ To be modified depending on your needs /!\
+    volumes:      
       - /mnt/dietpi_userdata/grafana/data:/var/lib/grafana
       - /mnt/dietpi_userdata/grafana/provisioning:/etc/grafana/provisioning
     depends_on:
@@ -80,7 +79,6 @@ services:
     expose:
       - 9090
     volumes:
-      # /!\ To be modified depending on your needs /!\
       - /mnt/dietpi_userdata/prometheus/data:/prometheus
       - /mnt/dietpi_userdata/prometheus:/etc/prometheus/
     depends_on:
